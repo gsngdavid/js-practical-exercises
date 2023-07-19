@@ -30,3 +30,8 @@ function myReduce(cb, acc = this[0]) {
     }
     return acc;
 }
+
+Array.prototype.myMap = myMap;
+Array.prototype.myFilter = myFilter;
+Array.prototype.myForEach = myForEach;
+Array.prototype.myReduce = myReduce;
