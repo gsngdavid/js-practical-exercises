@@ -15,3 +15,8 @@ function myFilter(cb) {
     return result;
 }
 
+function myForEach(cb) {
+    for(let i = 0; i < this.length; i++) {
+        cb(this[i], i, this);
+    }
+}
