@@ -20,3 +20,13 @@ function myForEach(cb) {
         cb(this[i], i, this);
     }
 }
+
+function myReduce(cb, acc = this[0]) {
+    let i = arguments[1] ? 0 : 1;
+    
+    while(i < this.length) {
+        acc = cb(acc, this[i], i, this);
+        i++;
+    }
+    return acc;
+}
